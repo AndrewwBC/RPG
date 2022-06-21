@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Trilha Sonora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="div-header">
+          <img src="/DD-Logo.png" alt="">
+          <div>
+              <ul class="lista">
+                  <li><a href="#clima">Clima</a></li>
+                  <li><a href="#Cidade">Cidade</a></li>
+                  <li><a href="#Batalha">Batalha</a></li>
+                  <li id="botao-entre-paginas"><a  href="musicas.html">Músicas</a></li>
+              </ul>
+        </div>
+        
+        </div>
+    </header>
+    <h1 class="cuidado">Cuidado! O site executa mais de um aúdio por vez!</h1>
+    <main>
+        <div>
+            <img src="DD-tavern.jpg" alt="">
+        </div>
+        <div class="taverna-texto">
+            <h1>Taverna</h1> <br>
+            <label for="">Briga na taverna</label>
+            <audio class="play" controls="play" loop src="/Briga de taverna.mp3"></audio><br>
+            <label for="">Taverna agitada</label>
+            <audio controls="play" loop src="/Taverna agitada.mp3"></audio><br>
+            <label for="">Taverna Calma Chuva</label>
+            <audio controls="play" loop src="/Taverna calma com chuva.mp3"></audio><br>
+          </div>
+          <div>
+            <img src="Praça.jpg" alt="">
+        </div>
+        <div class="taverna-texto">
+            <h1>Locais</h1> <br>
+            <label for="">Mercado Negro</label>
+            <audio class="play" controls="play" loop src="/Black Market.mp3"></audio><br>
+            <label for="">Salão Nobre</label>
+            <audio controls="play" loop src="/Palace.mp3"></audio><br>
+            <label for="">Coliseu</label>
+            <audio id="clima"  controls="play" loop src="/Coliseu.mp3"></audio><br>
+          </div>
+          <div>
+            <img src="Chuvamedieval.jpg" alt="">
+        </div>
+        <div class="taverna-texto">
+            <h1>Clima</h1> <br>
+            <label for="">Chuva Leve</label>
+            <audio class="play" controls="play" loop src="/Chuva mediana.mp3"></audio><br>
+            <label for="">Chuva Pesada</label>
+            <audio controls="play" loop src="/Chuva pesada.mp3"></audio><br>
+            <label for="">Tempestade</label>
+            <audio id="Cidade" controls="play" loop src="/Tempestade.mp3"></audio><br>
+          </div>
+          <div>
+            <img src="cidade.jpg" alt="">
+        </div>
+          <div class="taverna-texto">
+            <h1>Cidade</h1> <br>
+            <label for="">Cidade Deserta</label>
+            <audio class="play" controls="play" loop src="/Cidade deserta.mp3"></audio><br>
+            <label for="">Cidade movimentada</label>
+            <audio controls="play" loop src="/Cidade medieval.mp3"></audio><br>
+            <label for="">Cidade noite</label>
+            <audio id="Batalha" controls="play" loop src="/City night.mp3"></audio><br>
+          </div>
+          <div>
+            <img src="ship.jpg" alt="">
+        </div>
+          <div class="taverna-texto">
+            <h1>Porto/Mar</h1> <br>
+            <label for="">Porto</label>
+            <audio class="play" controls="play" loop src="/Porto Pirata.mp3"></audio><br>
+            <label for="">Viagem marítima</label>
+            <audio controls="play" loop src="/Sailing Ship.mp3"></audio><br>
+            <label for="">Batalha</label>
+            <audio id="Batalha" controls="play" loop src="/Shipbattle.mp3"></audio><br>
+          </div>
+          <div>
+            <img src="batalha.jpg" alt="">
+        </div>
+          <div class="bat-grid">
+            <h1 id="Batalha1">Batalha</h1>
+            <div class="batalha-div">
+                <div class="batalha-label">
+                <label for="">Cerco a cidade</label>
+                <label for="">Pós Guerra</label>
+                <label for="">Ataque Dragão</label>
+                <label for="">Ruido de batalha</label>
+                <label for="">Destruição de Vilarejo</label>
+            </div>
+            <div class="batalha-audio">
+                <audio class="play" controls="play" loop src="/Cerco a cidade.mp3"></audio><br>
+            
+                <audio controls="play" loop src="/Pós Guerra.mp3"></audio><br>
+                
+                <audio controls="play" loop src="/Ataque Dragão.mp3""></audio><br>
+               
+                <audio controls="play" loop src="/Ruídos de batalha longe.mp3"></audio><br>
+                
+                <audio controls="play" loop src="/Destruição de Vilarejo.mp3""></audio><br>
+            </div></div>
+            
+            
+            
+          </div>
+    </main>
+    <footer>
+         <div>
+           <h1>O Bardo. Alguns direitos quase reservados.</h1>
+         </div>
+         <p>Quem me dera ser um peixe...</p>
+     </footer>
+</body>
+</html>
