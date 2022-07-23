@@ -1,46 +1,60 @@
 body, h1, h2, p{
     margin: 0;
     padding: 0;
-    height: 100%;
+   
 }
-
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
 img{
     display: block;
-    width: 100%;
+    max-width: 100%;
  
     
 }
+
+/* HEADER */
+
+
+
 
 .imgded{
     width: 10%;
 }
 .div-header{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    
     flex: 1;
-    max-width: 100vw;
-    background: rgb(88, 83, 83);
-    background: linear-gradient(180deg, rgba(32,30,30,1) 18%, rgba(230, 230, 230, 0.096) 100%);
-    position: absolute;
+    max-width: 1000px;
+    margin: 0 auto;
     border-radius: 8px;
     align-items: center;
-   
-    z-index: 1;
+    
+    
    
 
 }
 
 
 
+/* LISTA */
 .lista{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 30px;
     list-style: none;
     color: black;
     font-size: 30px;
     
+}
+
+.header{
+    margin-bottom: 18px;
 }
 
 .lista a{
@@ -56,35 +70,110 @@ img{
       
 
 }
+/* FIM LISTA */
 
-.padrao-div{
-    font-size: 24px;
-    margin: 0;
-    padding: 12px 0px;
-    background-color: rgb(7, 7, 7);
-    text-align: center;
-    color: aliceblue;
-}
 
-.grid-padrao1{
- display: grid;
- grid-template-columns: 2fr 1fr;
-}
-   
 
-.texto-padrao{
-    padding: 12px 0px 0px 0px ;
-    text-align: center;
-    background-color: rgb(54, 54, 54);
-}
-
+/* BOTÃO AMBIENTE */
 #botao-entre-paginas a{
     
-    color: rgb(252, 249, 249);
+    color: rgb(90, 11, 11);
+    border-bottom: 2px solid black;
 
 }
 #botao-entre-paginas a:hover{
     
     color: #f8bb12;
 
+}
+
+
+    
+
+/* FIM, BOTÃO AMBIENTE */
+
+
+.musica-flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 64px;
+   
+}
+
+.padrão{
+    display: flex;
+    flex-direction: column;
+    color: #f8bb12;
+    align-items: center;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    
+}
+.youtube-flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+    justify-content: space-around;
+    
+    
+}
+
+
+
+
+
+.youtube-flex-2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    
+    
+}
+
+.youtube-div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #f8bb12;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+.frame{
+    border-radius: 8px;
+    object-fit: cover;
+    position: relative;
+}
+
+@media(max-width:1000px){
+    .lista a{
+        color: rgb(10, 10, 10) ;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 600;
+        border: 2px solid  rgba(255, 0, 0, 0)(0, 0, 0);
+        padding-bottom: 5px;
+
+    }
+    .lista{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+       
+        list-style: none;
+        color: black;
+        font-size: 30px;
+        
+    }
 }
